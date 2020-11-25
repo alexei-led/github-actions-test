@@ -27,7 +27,8 @@ jobs:
 
     - name: Print variables
       run: |
-        echo ${{ toJson(github) }}
+        echo "${{ toJson(github) }}"
+        echo "done"
 
     - name: Decide on tag
       id: image_tag
