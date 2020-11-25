@@ -30,6 +30,11 @@ jobs:
         echo "${{ toJson(github) }}"
         echo "done"
 
+    - name: Print ENV
+      run: |
+        printenv
+        echo "done"
+
     - name: Decide on tag
       id: tagger
       run: |
